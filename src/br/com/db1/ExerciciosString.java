@@ -42,11 +42,18 @@ public class ExerciciosString {
 	}
 	
 	public String exibirTextoSeparado(String texto) {
-		return texto.replaceAll(",", "");
+		return texto.replaceAll(", ", "\r\n");
 	}
 	
 	public Integer exibirVogais(String texto) {
-		
+		Integer cont = 0;
+		for(int i = 0; i < texto.length(); i++)	{
+		   char c = texto.charAt(i);
+		   if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
+			   cont++;
+		   }
+		}
+		return cont;
 	}
 	
 	public String retornarTextoInvertido(String texto) {

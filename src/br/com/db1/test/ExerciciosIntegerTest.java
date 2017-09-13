@@ -1,6 +1,7 @@
 package br.com.db1.test;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -43,9 +44,10 @@ public class ExerciciosIntegerTest {
 	
 	@Test
 	public void mostrarImparesTest() {
-		//Assert.assertTrue(exInteger.mostrarImpares(95) == 3);
-		//ArrayList<Integer> expected = new ArrayList<>(95,97,99);
-		//Assert.assertArrayEquals(exInteger.mostrarImpares(95), expected);
-		//assertEquals(Arrays.asList(95, 97, 99), exInteger.mostrarImpares(95));
+		List<Integer> expected = new ArrayList<Integer>();
+		expected.add(95);
+		expected.add(97);
+		expected.add(99);
+		Assert.assertEquals(expected,exInteger.mostrarImpares(95));
 	}
 }

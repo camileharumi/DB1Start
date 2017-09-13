@@ -1,6 +1,7 @@
 package br.com.db1;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class ExerciciosInteger {
 	
@@ -35,14 +36,12 @@ public class ExerciciosInteger {
 		}
 	}
 	
-	public ArrayList<Integer> mostrarImpares(Integer valor) {
-		ArrayList<Integer> valores = new ArrayList();
+	public List<Integer> mostrarImpares(Integer valor) {
+		List<Integer> valores = new ArrayList<Integer>();
 		
-		Integer cont = 0;
 		for (Integer x = valor; x<=100; x++) {
 			if(x%2 != 0) {			
-				valores.add(valor);
-				cont++;
+				valores.add(x);
 			}
 		}
 		return valores;
