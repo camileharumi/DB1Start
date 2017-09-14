@@ -30,7 +30,7 @@ public class ExerciciosStringTest {
 	
 	@Test
 	public void retornarMesmaQuantidadeTest() {
-		Assert.assertTrue(exString.retornarQuantidadeLetras("DB1START") == 8);
+		Assert.assertTrue(exString.retornarMesmaQuantidade(" DB1START ") == 8);
 	}
 	
 	@Test

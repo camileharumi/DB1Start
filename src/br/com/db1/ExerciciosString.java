@@ -19,10 +19,7 @@ public class ExerciciosString {
 	}
 	
 	public Integer retornarMesmaQuantidade(String texto) {
-		if(texto.contains(" ")) {
-			texto.replaceAll(" ", "");
-		}
-		return texto.length();
+		return texto.trim().length();
 	}
 	
 	public String retornarQuatroPrimeirasLetras(String texto) {
@@ -42,7 +39,7 @@ public class ExerciciosString {
 	}
 	
 	public String exibirTextoSeparado(String texto) {
-		return texto.replaceAll(", ", "\r\n");
+		return texto.replaceAll(",", "");
 	}
 	
 	public Integer exibirVogais(String texto) {
